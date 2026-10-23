@@ -1,0 +1,360 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>38/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 23 17:52:07 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4865 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when mandatory fields are empty", "Add Employee"</td>
+<td><div><pre>java.lang.AssertionError: Expected error message: First name cannot exceeds more than 20 characters and cannot be below 3 charactersfirstNameresponse: {&quot;firstName&quot;:&quot;First Name must contain only letters, spaces, or hyphens&quot;} expected [true] but found [false]
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message &quot;firstName&quot; should be &quot;First name cannot exceeds more than 20 characters and cannot be below 3 characters&quot;(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:52)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1847865717", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1847865717'><pre>java.lang.AssertionError: Expected error message: First name cannot exceeds more than 20 characters and cannot be below 3 charactersfirstNameresponse: {&quot;firstName&quot;:&quot;First Name must contain only letters, spaces, or hyphens&quot;} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message &quot;firstName&quot; should be &quot;First name cannot exceeds more than 20 characters and cannot be below 3 characters&quot;(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:52)
+</pre></div></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when  employee fields is missing", "Add Employee"</td>
+<td><div><pre>java.lang.AssertionError: Expected error message: must not be blankempIDresponse: {&quot;empId&quot;:&quot;must not be null&quot;} expected [true] but found [false]
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message &quot;empID&quot; should be &quot;must not be blank&quot;(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:31)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace269973396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace269973396'><pre>java.lang.AssertionError: Expected error message: must not be blankempIDresponse: {&quot;empId&quot;:&quot;must not be null&quot;} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message &quot;empID&quot; should be &quot;must not be blank&quot;(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:31)
+</pre></div></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate employee fields with null values", "Add Employee"</td>
+<td><div><pre>java.lang.AssertionError: Expected error message: must not be nullempIDresponse: {&quot;empId&quot;:&quot;must not be blank&quot;} expected [true] but found [false]
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message &quot;empID&quot; should be &quot;must not be null&quot;(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:71)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace284456930", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace284456930'><pre>java.lang.AssertionError: Expected error message: must not be nullempIDresponse: {&quot;empId&quot;:&quot;must not be blank&quot;} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message &quot;empID&quot; should be &quot;must not be null&quot;(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:71)
+</pre></div></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully add an employee with only mandatory details", "Add Employee"</td>
+<td><div><pre>java.lang.AssertionError: Unexpected HTTP status code. Response: Employee already exists expected [201] but found [409]
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(AddEmployeeSteps.java:100)
+	at ✽.the response status code should be 201(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:22)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace504510379", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace504510379'><pre>java.lang.AssertionError: Unexpected HTTP status code. Response: Employee already exists expected [201] but found [409]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(AddEmployeeSteps.java:100)
+	at ✽.the response status code should be 201(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:22)
+</pre></div></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reject an employee with an invalid authentication token", "Add Employee"</td>
+<td><div><pre>java.lang.AssertionError: expected [Invalid or Expired Token] but found [null]
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.verifyErrorField(AddEmployeeSteps.java:264)
+	at ✽.the error &quot;message&quot; should be &quot;Invalid or Expired Token&quot;(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:110)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace489523270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace489523270'><pre>java.lang.AssertionError: expected [Invalid or Expired Token] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.verifyErrorField(AddEmployeeSteps.java:264)
+	at ✽.the error &quot;message&quot; should be &quot;Invalid or Expired Token&quot;(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:110)
+</pre></div></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when mandatory fields are empty", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to Asset with invalid employeeID", "Login to Asset"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when  employee fields is missing", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to Asset with invalid credentials", "Login to Asset"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reject an employee with a duplicate mobile number", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reject an employee with a invalid role", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when mandatory fields are empty", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate employee fields with null values", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when mandatory fields are empty", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate employee fields with null values", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when  employee fields is missing", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when mandatory fields are empty", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate employee fields with null values", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when mandatory fields are empty", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when mandatory fields are empty", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to Asset with invalid employeeID", "Login to Asset"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when  employee fields is missing", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when  employee fields is missing", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate employee fields with null values", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to Asset with invalid password", "Login to Asset"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reject an employee with a invalid status", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when  employee fields is missing", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate employee fields with null values", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reject an employee with duplicated employee ID", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when  employee fields is missing", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reject an employee with a invalid HTTP method", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to Asset with invalid employeeID", "Login to Asset"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when  employee fields is missing", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to Asset with invalid password", "Login to Asset"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when  employee fields is missing", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate employee fields with null values", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when  employee fields is missing", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully add an employee with valid details", "Add Employee"</td>
+<td></td>
+<td>2</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to Asset with invalid password", "Login to Asset"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to Asset with valid credentials", "Login to Asset"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate when mandatory fields are empty", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate employee fields with null values", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+<tr>
+<td title='com.assetapi.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.assetapi.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reject an employee with duplicate Email", "Add Employee"</td>
+<td></td>
+<td>0</td>
+<td>com.assetapi.runners.TestRunner@17046283</td></tr>
+</table><p>
+</body>
+</html>

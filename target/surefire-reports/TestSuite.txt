@@ -1,0 +1,50 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 43, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 5.408 s <<< FAILURE! -- in TestSuite
+com.assetapi.runners.TestRunner.runScenario["Successfully add an employee with only mandatory details", "Add Employee"](2) -- Time elapsed: 0.072 s <<< FAILURE!
+java.lang.AssertionError: Unexpected HTTP status code. Response: Employee already exists expected [201] but found [409]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(AddEmployeeSteps.java:100)
+	at ✽.the response status code should be 201(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:22)
+
+com.assetapi.runners.TestRunner.runScenario["Validate when  employee fields is missing", "Add Employee"](3) -- Time elapsed: 0.063 s <<< FAILURE!
+java.lang.AssertionError: Expected error message: must not be blankempIDresponse: {"empId":"must not be null"} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message "empID" should be "must not be blank"(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:31)
+
+com.assetapi.runners.TestRunner.runScenario["Validate when mandatory fields are empty", "Add Employee"](14) -- Time elapsed: 0.026 s <<< FAILURE!
+java.lang.AssertionError: Expected error message: First name cannot exceeds more than 20 characters and cannot be below 3 charactersfirstNameresponse: {"firstName":"First Name must contain only letters, spaces, or hyphens"} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message "firstName" should be "First name cannot exceeds more than 20 characters and cannot be below 3 characters"(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:52)
+
+com.assetapi.runners.TestRunner.runScenario["Validate employee fields with null values", "Add Employee"](21) -- Time elapsed: 0.032 s <<< FAILURE!
+java.lang.AssertionError: Expected error message: must not be nullempIDresponse: {"empId":"must not be blank"} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message "empID" should be "must not be null"(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:71)
+
+com.assetapi.runners.TestRunner.runScenario["Reject an employee with an invalid authentication token", "Add Employee"](32) -- Time elapsed: 0.626 s <<< FAILURE!
+java.lang.AssertionError: expected [Invalid or Expired Token] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.verifyErrorField(AddEmployeeSteps.java:264)
+	at ✽.the error "message" should be "Invalid or Expired Token"(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:110)
+
