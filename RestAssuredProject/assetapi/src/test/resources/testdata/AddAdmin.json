@@ -1,0 +1,11 @@
+{
+  "firstName": "Hema",
+  "lastName": "chandran",
+  "empId": "V33342",
+  "mail": "employee12@gmail.com",
+  "status": "ACTIVE",
+  "role": "Employee",
+  "location": "Bangalore",
+  "password": "1234",
+  "otp": "1234567"
+}

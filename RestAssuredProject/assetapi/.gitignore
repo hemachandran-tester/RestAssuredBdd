@@ -1,0 +1,2 @@
+# Ignore credentials file
+/src/test/resources/credentials.env

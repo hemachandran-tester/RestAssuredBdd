@@ -1,0 +1,14 @@
+# Credentials
+**/credentials.env
+**/credentials.properties
+
+# IntelliJ
+**/.idea/
+
+# Maven
+**/target/
+
+# Eclipse
+**/.classpath
+**/.project
+**/.settings/

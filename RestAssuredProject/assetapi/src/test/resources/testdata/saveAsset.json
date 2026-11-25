@@ -1,0 +1,17 @@
+{
+  "assetName": "Laptop",
+  "serialNumber": "SN10005",
+  "empId": "V00123",
+  "status": "UnAssigned",
+  "type": "Laptop",
+  "purchaseDate": "2026-10-15",
+  "warrantyDate": "2027-10-15",
+  "location": "Chennai",
+  "modelName": "ThinkPad",
+  "operatingSystem": "Windows_11",
+  "returnDate": null,
+  "addedBy": "V00857",
+  "assignedDate": null,
+  "assignedBy": null,
+  "assetSourcedBy": "Internal"
+}
