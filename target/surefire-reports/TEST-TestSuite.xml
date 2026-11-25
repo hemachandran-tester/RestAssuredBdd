@@ -1,0 +1,1495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="5.408" tests="43" errors="0" skipped="0" failures="5">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\V00857\Documents\AssetAutomation\RestAssuredProject\assetapi\target\test-classes;C:\Users\V00857\Documents\AssetAutomation\RestAssuredProject\assetapi\target\classes;C:\Users\V00857\.m2\repository\io\rest-assured\rest-assured\5.5.6\rest-assured-5.5.6.jar;C:\Users\V00857\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\V00857\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\V00857\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\V00857\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\V00857\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\V00857\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\V00857\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\V00857\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\V00857\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\V00857\.m2\repository\io\rest-assured\json-path\5.5.6\json-path-5.5.6.jar;C:\Users\V00857\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\V00857\.m2\repository\io\rest-assured\rest-assured-common\5.5.6\rest-assured-common-5.5.6.jar;C:\Users\V00857\.m2\repository\io\rest-assured\xml-path\5.5.6\xml-path-5.5.6.jar;C:\Users\V00857\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\V00857\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\V00857\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\V00857\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\V00857\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-java\7.29.0\cucumber-java-7.29.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-core\7.29.0\cucumber-core-7.29.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-gherkin\7.29.0\cucumber-gherkin-7.29.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.29.0\cucumber-gherkin-messages-7.29.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\gherkin\35.1.0\gherkin-35.1.0.jar;C:\Users\V00857\.m2\repository\org\assertj\assertj-core\3.27.5\assertj-core-3.27.5.jar;C:\Users\V00857\.m2\repository\net\bytebuddy\byte-buddy\1.17.7\byte-buddy-1.17.7.jar;C:\Users\V00857\.m2\repository\io\cucumber\messages\29.0.1\messages-29.0.1.jar;C:\Users\V00857\.m2\repository\io\cucumber\pretty-formatter\2.3.0\pretty-formatter-2.3.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\teamcity-formatter\0.1.1\teamcity-formatter-0.1.1.jar;C:\Users\V00857\.m2\repository\io\cucumber\testng-xml-formatter\0.6.0\testng-xml-formatter-0.6.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-json-formatter\0.2.1\cucumber-json-formatter-0.2.1.jar;C:\Users\V00857\.m2\repository\io\cucumber\datatable\7.29.0\datatable-7.29.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-plugin\7.29.0\cucumber-plugin-7.29.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\docstring\7.29.0\docstring-7.29.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\html-formatter\21.15.1\html-formatter-21.15.1.jar;C:\Users\V00857\.m2\repository\io\cucumber\junit-xml-formatter\0.9.0\junit-xml-formatter-0.9.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\V00857\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-testng\7.29.0\cucumber-testng-7.29.0.jar;C:\Users\V00857\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\V00857\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\V00857\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\V00857\AppData\Local\Temp\surefire603217509100098579\surefirebooter-20261023175206430_3.jar C:\Users\V00857\AppData\Local\Temp\surefire603217509100098579 2026-10-23T17-52-06_271-jvmRun1 surefire-20261023175206430_1tmp surefire_0-20261023175206430_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\V00857\Documents\AssetAutomation\RestAssuredProject\assetapi\target\test-classes;C:\Users\V00857\Documents\AssetAutomation\RestAssuredProject\assetapi\target\classes;C:\Users\V00857\.m2\repository\io\rest-assured\rest-assured\5.5.6\rest-assured-5.5.6.jar;C:\Users\V00857\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\V00857\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\V00857\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\V00857\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\V00857\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\V00857\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\V00857\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\V00857\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\V00857\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\V00857\.m2\repository\io\rest-assured\json-path\5.5.6\json-path-5.5.6.jar;C:\Users\V00857\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\V00857\.m2\repository\io\rest-assured\rest-assured-common\5.5.6\rest-assured-common-5.5.6.jar;C:\Users\V00857\.m2\repository\io\rest-assured\xml-path\5.5.6\xml-path-5.5.6.jar;C:\Users\V00857\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\V00857\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\V00857\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\V00857\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\V00857\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-java\7.29.0\cucumber-java-7.29.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-core\7.29.0\cucumber-core-7.29.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-gherkin\7.29.0\cucumber-gherkin-7.29.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.29.0\cucumber-gherkin-messages-7.29.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\gherkin\35.1.0\gherkin-35.1.0.jar;C:\Users\V00857\.m2\repository\org\assertj\assertj-core\3.27.5\assertj-core-3.27.5.jar;C:\Users\V00857\.m2\repository\net\bytebuddy\byte-buddy\1.17.7\byte-buddy-1.17.7.jar;C:\Users\V00857\.m2\repository\io\cucumber\messages\29.0.1\messages-29.0.1.jar;C:\Users\V00857\.m2\repository\io\cucumber\pretty-formatter\2.3.0\pretty-formatter-2.3.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\teamcity-formatter\0.1.1\teamcity-formatter-0.1.1.jar;C:\Users\V00857\.m2\repository\io\cucumber\testng-xml-formatter\0.6.0\testng-xml-formatter-0.6.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-json-formatter\0.2.1\cucumber-json-formatter-0.2.1.jar;C:\Users\V00857\.m2\repository\io\cucumber\datatable\7.29.0\datatable-7.29.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-plugin\7.29.0\cucumber-plugin-7.29.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\docstring\7.29.0\docstring-7.29.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\html-formatter\21.15.1\html-formatter-21.15.1.jar;C:\Users\V00857\.m2\repository\io\cucumber\junit-xml-formatter\0.9.0\junit-xml-formatter-0.9.0.jar;C:\Users\V00857\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\V00857\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\V00857\.m2\repository\io\cucumber\cucumber-testng\7.29.0\cucumber-testng-7.29.0.jar;C:\Users\V00857\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\V00857\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\V00857\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\V00857"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\V00857\Documents\AssetAutomation\RestAssuredProject\assetapi"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\V00857\AppData\Local\Temp\surefire603217509100098579\surefirebooter-20261023175206430_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.5+9-LTS-239"/>
+    <property name="user.name" value="V00857"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\V00857\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\V00857\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.5"/>
+    <property name="user.dir" value="C:\Users\V00857\Documents\AssetAutomation\RestAssuredProject\assetapi"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\maven\apache-maven-3.9.6\bin;C:\Program Files\Java\jdk-21\bin;;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Users\V00857\AppData\Local\Microsoft\WindowsApps;C:\Users\V00857\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\V00857\AppData\Local\Programs\IntelliJ IDEA Community Edition 2025.2.6.2\bin;C:\Users\V00857\AppData\Local\Programs\Git\cmd;C:\Users\V00857\AppData\Roaming\npm;C:\Users\V00857\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.5+9-LTS-239"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Successfully add an employee with valid details&quot;, &quot;Add Employee&quot;](1)" classname="com.assetapi.runners.TestRunner" time="2.04">
+    <system-out><![CDATA[
+@smoke @positive
+Scenario: Successfully add an employee with valid details # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:11
+  ✔ Given the Add Employee API endpoint is available      # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                  # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token               # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add employee with valid details               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithValidDetails()
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 201
+Response Body: {
+    "empId": "V00888",
+    "firstName": "Hema",
+    "lastName": "Chandran",
+    "role": "Employee",
+    "mail": "hemachandranadmin123456792@gmail.com",
+    "mobile": "9876987693",
+    "location": "Chennai",
+    "status": "Active",
+    "department": "Delivery",
+    "designation": "QA"
+}
+HTTP/1.1 201 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "empId": "V00888",
+    "firstName": "Hema",
+    "lastName": "Chandran",
+    "role": "Employee",
+    "mail": "hemachandranadmin123456792@gmail.com",
+    "mobile": "9876987693",
+    "location": "Chennai",
+    "status": "Active",
+    "department": "Delivery",
+    "designation": "QA"
+}
+  ✔ When i send POST request to add the employee          # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 201           # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+{
+    "empId": "V00888",
+    "firstName": "Hema",
+    "lastName": "Chandran",
+    "role": "Employee",
+    "mail": "hemachandranadmin123456792@gmail.com",
+    "mobile": "9876987693",
+    "location": "Chennai",
+    "status": "Active",
+    "department": "Delivery",
+    "designation": "QA"
+}
+  ✔ And created employee details should be displayed      # com.assetapi.stepdefinitions.AddEmployeeSteps.employeeDetailsShouldBeDisplayed()
+  ✔ And the employee should be saved successfully         # com.assetapi.stepdefinitions.AddEmployeeSteps.employeeSavedSuccessfully()
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Successfully add an employee with only mandatory details&quot;, &quot;Add Employee&quot;](2)" classname="com.assetapi.runners.TestRunner" time="0.072">
+    <failure message="Unexpected HTTP status code. Response: Employee already exists expected [201] but found [409]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Unexpected HTTP status code. Response: Employee already exists expected [201] but found [409]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(AddEmployeeSteps.java:100)
+	at ✽.the response status code should be 201(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:22)
+]]></failure>
+    <system-out><![CDATA[
+@positive
+Scenario: Successfully add an employee with only mandatory details # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:19
+  ✔ Given the Add Employee API endpoint is available               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                           # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                        # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add employee with only mandatory details               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithOnlyMandatoryDetails()
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 409
+Response Body: Employee already exists
+HTTP/1.1 409 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 23
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+Employee already exists
+  ✔ When i send POST request to add the employee                   # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✘ Then the response status code should be 201                    # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+        java.lang.AssertionError: Unexpected HTTP status code. Response: Employee already exists expected [201] but found [409]
+        	at org.testng.Assert.fail(Assert.java:111)
+        	at org.testng.Assert.failNotEquals(Assert.java:1590)
+        	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+        	at org.testng.Assert.assertEquals(Assert.java:132)
+        	at org.testng.Assert.assertEquals(Assert.java:1431)
+        	at org.testng.Assert.assertEquals(Assert.java:1395)
+        	at com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(AddEmployeeSteps.java:100)
+        	at ✽.the response status code should be 201(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:22)
+  ↷ And created employee details should be displayed               # com.assetapi.stepdefinitions.AddEmployeeSteps.employeeDetailsShouldBeDisplayed()
+  ↷ And the employee should be saved successfully                  # com.assetapi.stepdefinitions.AddEmployeeSteps.employeeSavedSuccessfully()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;](3)" classname="com.assetapi.runners.TestRunner" time="0.063">
+    <failure message="Expected error message: must not be blankempIDresponse: {&quot;empId&quot;:&quot;must not be null&quot;} expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Expected error message: must not be blankempIDresponse: {"empId":"must not be null"} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message "empID" should be "must not be blank"(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:31)
+]]></failure>
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when  employee fields is missing     # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:36
+  ✔ Given the Add Employee API endpoint is available            # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                        # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                     # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "empID" missing                # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMissingField(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "empId": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "empId": "must not be null"
+}
+  ✔ When i send POST request to add the employee                # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                 # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✘ And the error message "empID" should be "must not be blank" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+        java.lang.AssertionError: Expected error message: must not be blankempIDresponse: {"empId":"must not be null"} expected [true] but found [false]
+        	at org.testng.Assert.fail(Assert.java:111)
+        	at org.testng.Assert.failNotEquals(Assert.java:1590)
+        	at org.testng.Assert.assertTrue(Assert.java:57)
+        	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+        	at ✽.the error message "empID" should be "must not be blank"(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:31)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;](4)" classname="com.assetapi.runners.TestRunner" time="0.041">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when  employee fields is missing        # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:37
+  ✔ Given the Add Employee API endpoint is available               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                           # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                        # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "firstName" missing               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMissingField(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "firstName": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "firstName": "must not be null"
+}
+  ✔ When i send POST request to add the employee                   # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                    # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "firstName" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;](5)" classname="com.assetapi.runners.TestRunner" time="0.033">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when  employee fields is missing       # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:38
+  ✔ Given the Add Employee API endpoint is available              # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                          # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                       # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "lastName" missing               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMissingField(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "lastName": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "lastName": "must not be null"
+}
+  ✔ When i send POST request to add the employee                  # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                   # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "lastName" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;](6)" classname="com.assetapi.runners.TestRunner" time="0.043">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when  employee fields is missing   # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:39
+  ✔ Given the Add Employee API endpoint is available          # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                      # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                   # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "role" missing               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMissingField(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "role": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "role": "must not be null"
+}
+  ✔ When i send POST request to add the employee              # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400               # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "role" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;](7)" classname="com.assetapi.runners.TestRunner" time="0.048">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when  employee fields is missing   # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:40
+  ✔ Given the Add Employee API endpoint is available          # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                      # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                   # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "mail" missing               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMissingField(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "mail": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "mail": "must not be null"
+}
+  ✔ When i send POST request to add the employee              # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400               # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "mail" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;](8)" classname="com.assetapi.runners.TestRunner" time="0.039">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when  employee fields is missing     # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:41
+  ✔ Given the Add Employee API endpoint is available            # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                        # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                     # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "mobile" missing               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMissingField(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "mobile": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "mobile": "must not be null"
+}
+  ✔ When i send POST request to add the employee                # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                 # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "mobile" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;](9)" classname="com.assetapi.runners.TestRunner" time="0.04">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when  employee fields is missing       # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:42
+  ✔ Given the Add Employee API endpoint is available              # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                          # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                       # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "location" missing               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMissingField(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "location": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "location": "must not be null"
+}
+  ✔ When i send POST request to add the employee                  # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                   # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "location" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;](10)" classname="com.assetapi.runners.TestRunner" time="0.031">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when  employee fields is missing     # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:43
+  ✔ Given the Add Employee API endpoint is available            # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                        # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                     # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "status" missing               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMissingField(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "status": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "status": "must not be null"
+}
+  ✔ When i send POST request to add the employee                # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                 # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "status" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;](11)" classname="com.assetapi.runners.TestRunner" time="0.031">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when  employee fields is missing         # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:44
+  ✔ Given the Add Employee API endpoint is available                # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                            # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                         # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "department" missing               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMissingField(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "department": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "department": "must not be null"
+}
+  ✔ When i send POST request to add the employee                    # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                     # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "department" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;](12)" classname="com.assetapi.runners.TestRunner" time="0.022">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when  employee fields is missing          # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:45
+  ✔ Given the Add Employee API endpoint is available                 # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                             # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                          # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "designation" missing               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMissingField(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "designation": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "designation": "must not be null"
+}
+  ✔ When i send POST request to add the employee                     # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                      # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "designation" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;](13)" classname="com.assetapi.runners.TestRunner" time="0.03">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when mandatory fields are empty      # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:57
+  ✔ Given the Add Employee API endpoint is available            # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                        # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                     # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with mandatory "empID" is empty     # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMandatoryFieldsMissing(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "empId": "must not be blank"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "empId": "must not be blank"
+}
+  ✔ When i send POST request to add the employee                # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                 # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "empID" should be "must not be blank" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;](14)" classname="com.assetapi.runners.TestRunner" time="0.026">
+    <failure message="Expected error message: First name cannot exceeds more than 20 characters and cannot be below 3 charactersfirstNameresponse: {&quot;firstName&quot;:&quot;First Name must contain only letters, spaces, or hyphens&quot;} expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Expected error message: First name cannot exceeds more than 20 characters and cannot be below 3 charactersfirstNameresponse: {"firstName":"First Name must contain only letters, spaces, or hyphens"} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message "firstName" should be "First name cannot exceeds more than 20 characters and cannot be below 3 characters"(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:52)
+]]></failure>
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when mandatory fields are empty                                                                           # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:58
+  ✔ Given the Add Employee API endpoint is available                                                                                 # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                                                                                             # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                                                                                          # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with mandatory "firstName" is empty                                                                      # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMandatoryFieldsMissing(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "firstName": "First Name must contain only letters, spaces, or hyphens"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "firstName": "First Name must contain only letters, spaces, or hyphens"
+}
+  ✔ When i send POST request to add the employee                                                                                     # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                                                                                      # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✘ And the error message "firstName" should be "First name cannot exceeds more than 20 characters and cannot be below 3 characters" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+        java.lang.AssertionError: Expected error message: First name cannot exceeds more than 20 characters and cannot be below 3 charactersfirstNameresponse: {"firstName":"First Name must contain only letters, spaces, or hyphens"} expected [true] but found [false]
+        	at org.testng.Assert.fail(Assert.java:111)
+        	at org.testng.Assert.failNotEquals(Assert.java:1590)
+        	at org.testng.Assert.assertTrue(Assert.java:57)
+        	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+        	at ✽.the error message "firstName" should be "First name cannot exceeds more than 20 characters and cannot be below 3 characters"(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:52)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;](15)" classname="com.assetapi.runners.TestRunner" time="0.03">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when mandatory fields are empty                                               # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:59
+  ✔ Given the Add Employee API endpoint is available                                                     # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                                                                 # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                                                              # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with mandatory "lastName" is empty                                           # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMandatoryFieldsMissing(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "lastName": "Last Name must contain only letters, spaces, or hyphens"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "lastName": "Last Name must contain only letters, spaces, or hyphens"
+}
+  ✔ When i send POST request to add the employee                                                         # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                                                          # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "lastName" should be "Last Name must contain only letters, spaces, or hyphens" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;](16)" classname="com.assetapi.runners.TestRunner" time="0.017">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when mandatory fields are empty         # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:60
+  ✔ Given the Add Employee API endpoint is available               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                           # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                        # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with mandatory "mail" is empty         # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMandatoryFieldsMissing(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "mail": "Invalid email address"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "mail": "Invalid email address"
+}
+  ✔ When i send POST request to add the employee                   # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                    # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "mail" should be "Invalid email address" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;](17)" classname="com.assetapi.runners.TestRunner" time="0.016">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when mandatory fields are empty                # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:61
+  ✔ Given the Add Employee API endpoint is available                      # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                                  # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                               # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with mandatory "mobile" is empty              # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMandatoryFieldsMissing(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "mobile": "Valid Mobile Number Needed"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "mobile": "Valid Mobile Number Needed"
+}
+  ✔ When i send POST request to add the employee                          # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                           # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "mobile" should be "Valid Mobile Number Needed" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;](18)" classname="com.assetapi.runners.TestRunner" time="0.033">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when mandatory fields are empty                                              # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:62
+  ✔ Given the Add Employee API endpoint is available                                                    # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                                                                # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                                                             # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with mandatory "location" is empty                                          # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMandatoryFieldsMissing(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "location": "Location must contain only letters, spaces, or hyphens"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "location": "Location must contain only letters, spaces, or hyphens"
+}
+  ✔ When i send POST request to add the employee                                                        # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                                                         # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "location" should be "Location must contain only letters, spaces, or hyphens" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;](19)" classname="com.assetapi.runners.TestRunner" time="0.017">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when mandatory fields are empty                                                  # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:63
+  ✔ Given the Add Employee API endpoint is available                                                        # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                                                                    # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                                                                 # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with mandatory "department" is empty                                            # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMandatoryFieldsMissing(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "department": "Department must contain only letters, spaces, or hyphens"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "department": "Department must contain only letters, spaces, or hyphens"
+}
+  ✔ When i send POST request to add the employee                                                            # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                                                             # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "department" should be "Department must contain only letters, spaces, or hyphens" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;](20)" classname="com.assetapi.runners.TestRunner" time="0.034">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate when mandatory fields are empty                                                    # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:64
+  ✔ Given the Add Employee API endpoint is available                                                          # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                                                                      # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                                                                   # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with mandatory "designation" is empty                                             # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithMandatoryFieldsMissing(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "designation": "Designation must contain only letters, spaces, or hyphens"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "designation": "Designation must contain only letters, spaces, or hyphens"
+}
+  ✔ When i send POST request to add the employee                                                              # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                                                               # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "designation" should be "Designation must contain only letters, spaces, or hyphens" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;](21)" classname="com.assetapi.runners.TestRunner" time="0.032">
+    <failure message="Expected error message: must not be nullempIDresponse: {&quot;empId&quot;:&quot;must not be blank&quot;} expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Expected error message: must not be nullempIDresponse: {"empId":"must not be blank"} expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message "empID" should be "must not be null"(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:71)
+]]></failure>
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate employee fields with null values    # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:76
+  ✔ Given the Add Employee API endpoint is available           # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                       # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                    # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "empID" as null               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithFieldsAsNull(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "empId": "must not be blank"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "empId": "must not be blank"
+}
+  ✔ When i send POST request to add the employee               # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✘ And the error message "empID" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+        java.lang.AssertionError: Expected error message: must not be nullempIDresponse: {"empId":"must not be blank"} expected [true] but found [false]
+        	at org.testng.Assert.fail(Assert.java:111)
+        	at org.testng.Assert.failNotEquals(Assert.java:1590)
+        	at org.testng.Assert.assertTrue(Assert.java:57)
+        	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+        	at ✽.the error message "empID" should be "must not be null"(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:71)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;](22)" classname="com.assetapi.runners.TestRunner" time="0.023">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate employee fields with null values        # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:77
+  ✔ Given the Add Employee API endpoint is available               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                           # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                        # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "firstName" as null               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithFieldsAsNull(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "firstName": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "firstName": "must not be null"
+}
+  ✔ When i send POST request to add the employee                   # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                    # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "firstName" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;](23)" classname="com.assetapi.runners.TestRunner" time="0.023">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate employee fields with null values       # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:78
+  ✔ Given the Add Employee API endpoint is available              # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                          # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                       # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "lastName" as null               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithFieldsAsNull(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "lastName": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "lastName": "must not be null"
+}
+  ✔ When i send POST request to add the employee                  # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                   # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "lastName" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;](24)" classname="com.assetapi.runners.TestRunner" time="0.012">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate employee fields with null values   # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:79
+  ✔ Given the Add Employee API endpoint is available          # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                      # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                   # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "mail" as null               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithFieldsAsNull(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "mail": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "mail": "must not be null"
+}
+  ✔ When i send POST request to add the employee              # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400               # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "mail" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;](25)" classname="com.assetapi.runners.TestRunner" time="0.03">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate employee fields with null values     # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:80
+  ✔ Given the Add Employee API endpoint is available            # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                        # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                     # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "mobile" as null               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithFieldsAsNull(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "mobile": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "mobile": "must not be null"
+}
+  ✔ When i send POST request to add the employee                # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                 # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "mobile" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;](26)" classname="com.assetapi.runners.TestRunner" time="0.02">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate employee fields with null values       # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:81
+  ✔ Given the Add Employee API endpoint is available              # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                          # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                       # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "location" as null               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithFieldsAsNull(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "location": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "location": "must not be null"
+}
+  ✔ When i send POST request to add the employee                  # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                   # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "location" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;](27)" classname="com.assetapi.runners.TestRunner" time="0.024">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate employee fields with null values         # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:82
+  ✔ Given the Add Employee API endpoint is available                # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                            # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                         # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "department" as null               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithFieldsAsNull(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "department": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "department": "must not be null"
+}
+  ✔ When i send POST request to add the employee                    # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                     # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "department" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;](28)" classname="com.assetapi.runners.TestRunner" time="0.018">
+    <system-out><![CDATA[
+@negative
+Scenario Outline: Validate employee fields with null values          # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:83
+  ✔ Given the Add Employee API endpoint is available                 # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                             # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                          # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with "designation" as null               # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithFieldsAsNull(java.lang.String)
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "designation": "must not be null"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Connection: close
+
+{
+    "designation": "must not be null"
+}
+  ✔ When i send POST request to add the employee                     # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                      # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "designation" should be "must not be null" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Reject an employee with duplicated employee ID&quot;, &quot;Add Employee&quot;](29)" classname="com.assetapi.runners.TestRunner" time="0.026">
+    <system-out><![CDATA[
+@negative
+Scenario: Reject an employee with duplicated employee ID # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:86
+  ✔ Given the Add Employee API endpoint is available     # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                 # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token              # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with duplicate employee ID   # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithDuplicateId()
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 409
+Response Body: Employee already exists
+HTTP/1.1 409 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 23
+Date: Fri, 23 Oct 2026 12:22:09 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+Employee already exists
+  ✔ When i send POST request to add the employee         # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 409          # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Reject an employee with duplicate Email&quot;, &quot;Add Employee&quot;](30)" classname="com.assetapi.runners.TestRunner" time="0.016">
+    <system-out><![CDATA[
+@negative
+Scenario: Reject an employee with duplicate Email    # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:92
+  ✔ Given the Add Employee API endpoint is available # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json             # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token          # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with a duplicate Email   # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithDuplicateEmail()
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 409
+Response Body: Employee already exists
+HTTP/1.1 409 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 23
+Date: Fri, 23 Oct 2026 12:22:10 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+Employee already exists
+  ✔ When i send POST request to add the employee     # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 409      # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Reject an employee with a duplicate mobile number&quot;, &quot;Add Employee&quot;](31)" classname="com.assetapi.runners.TestRunner" time="0.037">
+    <system-out><![CDATA[
+@negative
+Scenario: Reject an employee with a duplicate mobile number # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:98
+  ✔ Given the Add Employee API endpoint is available        # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                    # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                 # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with a duplicate mobile number  # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithDuplicateMobile()
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 409
+Response Body: Employee already exists
+HTTP/1.1 409 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 23
+Date: Fri, 23 Oct 2026 12:22:10 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+Employee already exists
+  ✔ When i send POST request to add the employee            # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 409             # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Reject an employee with an invalid authentication token&quot;, &quot;Add Employee&quot;](32)" classname="com.assetapi.runners.TestRunner" time="0.626">
+    <failure message="expected [Invalid or Expired Token] but found [null]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [Invalid or Expired Token] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.verifyErrorField(AddEmployeeSteps.java:264)
+	at ✽.the error "message" should be "Invalid or Expired Token"(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:110)
+]]></failure>
+    <system-out><![CDATA[
+@negative @authentication
+Scenario: Reject an employee with an invalid authentication token # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:105
+  ✔ Given the Add Employee API endpoint is available              # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                          # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                       # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given I have an invalid authentication token                  # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithInvalidAuthenticationToken()
+  ✔ And i add employee with valid details                         # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithValidDetails()
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 401
+Response Body: "timestamp": "17:52:10.932395900+05:30",
+"status": 401,
+"error": "Unauthorized",
+"message": "Invalid or Expired Token"
+HTTP/1.1 401 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json;charset=ISO-8859-1
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:10 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+"timestamp": "17:52:10.932395900+05:30",
+"status": 401,
+"error": "Unauthorized",
+"message": "Invalid or Expired Token"
+  ✔ When i send POST request to add the employee                  # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 401                   # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✘ And the error "message" should be "Invalid or Expired Token"  # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyErrorField(java.lang.String,java.lang.String)
+        java.lang.AssertionError: expected [Invalid or Expired Token] but found [null]
+        	at org.testng.Assert.fail(Assert.java:111)
+        	at org.testng.Assert.failNotEquals(Assert.java:1590)
+        	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+        	at org.testng.Assert.assertEquals(Assert.java:132)
+        	at org.testng.Assert.assertEquals(Assert.java:656)
+        	at org.testng.Assert.assertEquals(Assert.java:666)
+        	at com.assetapi.stepdefinitions.AddEmployeeSteps.verifyErrorField(AddEmployeeSteps.java:264)
+        	at ✽.the error "message" should be "Invalid or Expired Token"(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:110)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Reject an employee with a invalid HTTP method&quot;, &quot;Add Employee&quot;](33)" classname="com.assetapi.runners.TestRunner" time="0.048">
+    <system-out><![CDATA[
+@negative
+Scenario: Reject an employee with a invalid HTTP method  # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:113
+  ✔ Given the Add Employee API endpoint is available     # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                 # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token              # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with invalid HTTP method     # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithInvalidHttpMethod()
+HTTP/1.1 405 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Allow: POST
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:10 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "timestamp": "2026-10-23T12:22:11.542+00:00",
+    "status": 405,
+    "error": "Method Not Allowed",
+    "path": "/assetManager/v1/employee/saveemployee"
+}
+  ✔ When i send a GET request to add an employee         # com.assetapi.stepdefinitions.AddEmployeeSteps.sendGetRequestToAddEmployee()
+  ✔ Then the response status code should be 405          # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error "error" should be "Method Not Allowed" # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyErrorField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Reject an employee with a invalid role&quot;, &quot;Add Employee&quot;](34)" classname="com.assetapi.runners.TestRunner" time="0.027">
+    <system-out><![CDATA[
+@negative
+Scenario: Reject an employee with a invalid role                           # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:120
+  ✔ Given the Add Employee API endpoint is available                       # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                                   # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                                # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with invalid role                              # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithInvalidRole()
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "role": "Role can be Admin or Employee"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:10 GMT
+Connection: close
+
+{
+    "role": "Role can be Admin or Employee"
+}
+  ✔ When i send POST request to add the employee                           # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                            # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "role" should be "Role can be Admin or Employee" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Reject an employee with a invalid status&quot;, &quot;Add Employee&quot;](35)" classname="com.assetapi.runners.TestRunner" time="0.021">
+    <system-out><![CDATA[
+@negative
+Scenario: Reject an employee with a invalid status                              # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:127
+  ✔ Given the Add Employee API endpoint is available                            # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeEndpointIsAvailable()
+  ✔ And the request content type is Json                                        # com.assetapi.stepdefinitions.AddEmployeeSteps.requestContentTypeJson()
+  ✔ And I have a valid authentication token                                     # com.assetapi.stepdefinitions.AddEmployeeSteps.validAuthenticationToken()
+  ✔ Given i add an employee with invalid status                                 # com.assetapi.stepdefinitions.AddEmployeeSteps.addEmployeeWithInvalidStatus()
+Request URL: http://localhost:8081/assetManager/v1/employee/saveemployee
+Response Status: 400
+Response Body: {
+    "status": "status can be Active or Inactive"
+}
+HTTP/1.1 400 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 23 Oct 2026 12:22:10 GMT
+Connection: close
+
+{
+    "status": "status can be Active or Inactive"
+}
+  ✔ When i send POST request to add the employee                                # com.assetapi.stepdefinitions.AddEmployeeSteps.sendPostRequestToAddEmployee()
+  ✔ Then the response status code should be 400                                 # com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(int)
+  ✔ And the error message "status" should be "status can be Active or Inactive" # com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login to Asset with valid credentials&quot;, &quot;Login to Asset&quot;](36)" classname="com.assetapi.runners.TestRunner" time="0.193">
+    <system-out><![CDATA[
+Scenario: Login to Asset with valid credentials             # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/Login.feature:3
+  ✔ Given the login API is available                        # com.assetapi.stepdefinitions.LoginSteps.loginApiIsAvailable()
+  ✔ When i login with valid credentials                     # com.assetapi.stepdefinitions.LoginSteps.loginWithValidCred()
+  ✔ Then the response status should be 200                  # com.assetapi.stepdefinitions.LoginSteps.responseStatusShouldbe(int)
+  ✔ And the response should contain an authentication token # com.assetapi.stepdefinitions.LoginSteps.responseShouldHaveAuthToken()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login to Asset with invalid credentials&quot;, &quot;Login to Asset&quot;](37)" classname="com.assetapi.runners.TestRunner" time="0.116">
+    <system-out><![CDATA[
+Scenario: Login to Asset with invalid credentials # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/Login.feature:9
+  ✔ Given the login API is available              # com.assetapi.stepdefinitions.LoginSteps.loginApiIsAvailable()
+  ✔ When i login with invalid credentials         # com.assetapi.stepdefinitions.LoginSteps.loginWithInvalidCred()
+  ✔ Then the response status should be 401        # com.assetapi.stepdefinitions.LoginSteps.responseStatusShouldbe(int)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login to Asset with invalid employeeID&quot;, &quot;Login to Asset&quot;](38)" classname="com.assetapi.runners.TestRunner" time="0.032">
+    <system-out><![CDATA[
+Scenario Outline: Login to Asset with invalid employeeID                         # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/Login.feature:22
+  ✔ Given the login API is available                                             # com.assetapi.stepdefinitions.LoginSteps.loginApiIsAvailable()
+  ✔ When i login with employeeID "V000" and valid password                       # com.assetapi.stepdefinitions.LoginSteps.loginWithEmpIDandValidPass(java.lang.String)
+  ✔ Then the response status should be 400                                       # com.assetapi.stepdefinitions.LoginSteps.responseStatusShouldbe(int)
+  ✔ And the response field "empId" should equal "Must be V followed by 5 digits" # com.assetapi.stepdefinitions.LoginSteps.responseFieldShouldEqual(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login to Asset with invalid employeeID&quot;, &quot;Login to Asset&quot;](39)" classname="com.assetapi.runners.TestRunner" time="0.026">
+    <system-out><![CDATA[
+Scenario Outline: Login to Asset with invalid employeeID                         # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/Login.feature:23
+  ✔ Given the login API is available                                             # com.assetapi.stepdefinitions.LoginSteps.loginApiIsAvailable()
+  ✔ When i login with employeeID "Vuyf" and valid password                       # com.assetapi.stepdefinitions.LoginSteps.loginWithEmpIDandValidPass(java.lang.String)
+  ✔ Then the response status should be 400                                       # com.assetapi.stepdefinitions.LoginSteps.responseStatusShouldbe(int)
+  ✔ And the response field "empId" should equal "Must be V followed by 5 digits" # com.assetapi.stepdefinitions.LoginSteps.responseFieldShouldEqual(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login to Asset with invalid employeeID&quot;, &quot;Login to Asset&quot;](40)" classname="com.assetapi.runners.TestRunner" time="0.025">
+    <system-out><![CDATA[
+Scenario Outline: Login to Asset with invalid employeeID                         # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/Login.feature:24
+  ✔ Given the login API is available                                             # com.assetapi.stepdefinitions.LoginSteps.loginApiIsAvailable()
+  ✔ When i login with employeeID "V0000123" and valid password                   # com.assetapi.stepdefinitions.LoginSteps.loginWithEmpIDandValidPass(java.lang.String)
+  ✔ Then the response status should be 400                                       # com.assetapi.stepdefinitions.LoginSteps.responseStatusShouldbe(int)
+  ✔ And the response field "empId" should equal "Must be V followed by 5 digits" # com.assetapi.stepdefinitions.LoginSteps.responseFieldShouldEqual(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login to Asset with invalid password&quot;, &quot;Login to Asset&quot;](41)" classname="com.assetapi.runners.TestRunner" time="0.022">
+    <system-out><![CDATA[
+Scenario Outline: Login to Asset with invalid password                                            # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/Login.feature:34
+  ✔ Given the login API is available                                                              # com.assetapi.stepdefinitions.LoginSteps.loginApiIsAvailable()
+  ✔ When i login with valid employeeID and password "abc"                                         # com.assetapi.stepdefinitions.LoginSteps.loginWithEmpIDandInValidPass(java.lang.String)
+  ✔ Then the response status should be 400                                                        # com.assetapi.stepdefinitions.LoginSteps.responseStatusShouldbe(int)
+  ✔ And the response field "password" should equal "Password must be between 8 and 20 characters" # com.assetapi.stepdefinitions.LoginSteps.responseFieldShouldEqual(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login to Asset with invalid password&quot;, &quot;Login to Asset&quot;](42)" classname="com.assetapi.runners.TestRunner" time="0.025">
+    <system-out><![CDATA[
+Scenario Outline: Login to Asset with invalid password                                            # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/Login.feature:35
+  ✔ Given the login API is available                                                              # com.assetapi.stepdefinitions.LoginSteps.loginApiIsAvailable()
+  ✔ When i login with valid employeeID and password "He"                                          # com.assetapi.stepdefinitions.LoginSteps.loginWithEmpIDandInValidPass(java.lang.String)
+  ✔ Then the response status should be 400                                                        # com.assetapi.stepdefinitions.LoginSteps.responseStatusShouldbe(int)
+  ✔ And the response field "password" should equal "Password must be between 8 and 20 characters" # com.assetapi.stepdefinitions.LoginSteps.responseFieldShouldEqual(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login to Asset with invalid password&quot;, &quot;Login to Asset&quot;](43)" classname="com.assetapi.runners.TestRunner" time="0.023">
+    <system-out><![CDATA[
+Scenario Outline: Login to Asset with invalid password                                            # file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/Login.feature:36
+  ✔ Given the login API is available                                                              # com.assetapi.stepdefinitions.LoginSteps.loginApiIsAvailable()
+  ✔ When i login with valid employeeID and password "H@@@234"                                     # com.assetapi.stepdefinitions.LoginSteps.loginWithEmpIDandInValidPass(java.lang.String)
+  ✔ Then the response status should be 400                                                        # com.assetapi.stepdefinitions.LoginSteps.responseStatusShouldbe(int)
+  ✔ And the response field "password" should equal "Password must be between 8 and 20 characters" # com.assetapi.stepdefinitions.LoginSteps.responseFieldShouldEqual(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+</testsuite>

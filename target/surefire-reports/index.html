@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">43 methods, 5 failed,   38 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">runScenario("Validate when mandatory fields are empty", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">runScenario("Validate when  employee fields is missing", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">runScenario("Validate employee fields with null values", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successfully add an employee with only mandatory details&quot;, &quot;Add Employee&quot;)">runScenario("Successfully add an employee with only mandatory details", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Reject an employee with an invalid authentication token&quot;, &quot;Add Employee&quot;)">runScenario("Reject an employee with an invalid authentication token", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">runScenario("Validate when mandatory fields are empty", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login to Asset with invalid employeeID&quot;, &quot;Login to Asset&quot;)">runScenario("Login to Asset with invalid employeeID", "Login to Asset")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">runScenario("Validate when  employee fields is missing", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login to Asset with invalid credentials&quot;, &quot;Login to Asset&quot;)">runScenario("Login to Asset with invalid credentials", "Login to Asset")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Reject an employee with a duplicate mobile number&quot;, &quot;Add Employee&quot;)">runScenario("Reject an employee with a duplicate mobile number", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Reject an employee with a invalid role&quot;, &quot;Add Employee&quot;)">runScenario("Reject an employee with a invalid role", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">runScenario("Validate when mandatory fields are empty", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">runScenario("Validate employee fields with null values", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">runScenario("Validate when mandatory fields are empty", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">runScenario("Validate employee fields with null values", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">runScenario("Validate when  employee fields is missing", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">runScenario("Validate when mandatory fields are empty", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">runScenario("Validate employee fields with null values", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">runScenario("Validate when mandatory fields are empty", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">runScenario("Validate when mandatory fields are empty", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login to Asset with invalid employeeID&quot;, &quot;Login to Asset&quot;)">runScenario("Login to Asset with invalid employeeID", "Login to Asset")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">runScenario("Validate when  employee fields is missing", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">runScenario("Validate when  employee fields is missing", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">runScenario("Validate employee fields with null values", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login to Asset with invalid password&quot;, &quot;Login to Asset&quot;)">runScenario("Login to Asset with invalid password", "Login to Asset")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Reject an employee with a invalid status&quot;, &quot;Add Employee&quot;)">runScenario("Reject an employee with a invalid status", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">runScenario("Validate when  employee fields is missing", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">runScenario("Validate employee fields with null values", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Reject an employee with duplicated employee ID&quot;, &quot;Add Employee&quot;)">runScenario("Reject an employee with duplicated employee ID", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">runScenario("Validate when  employee fields is missing", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Reject an employee with a invalid HTTP method&quot;, &quot;Add Employee&quot;)">runScenario("Reject an employee with a invalid HTTP method", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login to Asset with invalid employeeID&quot;, &quot;Login to Asset&quot;)">runScenario("Login to Asset with invalid employeeID", "Login to Asset")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">runScenario("Validate when  employee fields is missing", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login to Asset with invalid password&quot;, &quot;Login to Asset&quot;)">runScenario("Login to Asset with invalid password", "Login to Asset")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">runScenario("Validate when  employee fields is missing", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">runScenario("Validate employee fields with null values", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">runScenario("Validate when  employee fields is missing", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successfully add an employee with valid details&quot;, &quot;Add Employee&quot;)">runScenario("Successfully add an employee with valid details", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login to Asset with invalid password&quot;, &quot;Login to Asset&quot;)">runScenario("Login to Asset with invalid password", "Login to Asset")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login to Asset with valid credentials&quot;, &quot;Login to Asset&quot;)">runScenario("Login to Asset with valid credentials", "Login to Asset")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">runScenario("Validate when mandatory fields are empty", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">runScenario("Validate employee fields with null values", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.assetapi.runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Reject an employee with duplicate Email&quot;, &quot;Add Employee&quot;)">runScenario("Reject an employee with duplicate Email", "Add Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.assetapi.runners.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when mandatory fields are empty", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when mandatory fields are empty","Add Employee")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected error message: First name cannot exceeds more than 20 characters and cannot be below 3 charactersfirstNameresponse: {&quot;firstName&quot;:&quot;First Name must contain only letters, spaces, or hyphens&quot;} expected [true] but found [false]
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message &quot;firstName&quot; should be &quot;First name cannot exceeds more than 20 characters and cannot be below 3 characters&quot;(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:52)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when  employee fields is missing", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when  employee fields is missing","Add Employee")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected error message: must not be blankempIDresponse: {&quot;empId&quot;:&quot;must not be null&quot;} expected [true] but found [false]
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message &quot;empID&quot; should be &quot;must not be blank&quot;(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:31)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate employee fields with null values", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate employee fields with null values","Add Employee")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected error message: must not be nullempIDresponse: {&quot;empId&quot;:&quot;must not be blank&quot;} expected [true] but found [false]
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.errorMessageForMissingField(AddEmployeeSteps.java:163)
+	at ✽.the error message &quot;empID&quot; should be &quot;must not be null&quot;(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:71)
+... Removed 3 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successfully add an employee with only mandatory details&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Successfully add an employee with only mandatory details", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successfully add an employee with only mandatory details","Add Employee")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Unexpected HTTP status code. Response: Employee already exists expected [201] but found [409]
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.verifyStatusCode(AddEmployeeSteps.java:100)
+	at ✽.the response status code should be 201(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:22)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Reject an employee with an invalid authentication token&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Reject an employee with an invalid authentication token", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Reject an employee with an invalid authentication token","Add Employee")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Invalid or Expired Token] but found [null]
+	at com.assetapi.stepdefinitions.AddEmployeeSteps.verifyErrorField(AddEmployeeSteps.java:264)
+	at ✽.the error &quot;message&quot; should be &quot;Invalid or Expired Token&quot;(file:///C:/Users/V00857/Documents/AssetAutomation/RestAssuredProject/assetapi/src/test/resources/features/AddEmployee.feature:110)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.assetapi.runners.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when mandatory fields are empty", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when mandatory fields are empty","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login to Asset with invalid employeeID&quot;, &quot;Login to Asset&quot;)">
+                  </a> <!-- runScenario("Login to Asset with invalid employeeID", "Login to Asset") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login to Asset with invalid employeeID","Login to Asset")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when  employee fields is missing", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when  employee fields is missing","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login to Asset with invalid credentials&quot;, &quot;Login to Asset&quot;)">
+                  </a> <!-- runScenario("Login to Asset with invalid credentials", "Login to Asset") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login to Asset with invalid credentials","Login to Asset")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Reject an employee with a duplicate mobile number&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Reject an employee with a duplicate mobile number", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Reject an employee with a duplicate mobile number","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Reject an employee with a invalid role&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Reject an employee with a invalid role", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Reject an employee with a invalid role","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when mandatory fields are empty", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when mandatory fields are empty","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate employee fields with null values", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate employee fields with null values","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when mandatory fields are empty", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when mandatory fields are empty","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate employee fields with null values", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate employee fields with null values","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when  employee fields is missing", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when  employee fields is missing","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when mandatory fields are empty", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when mandatory fields are empty","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate employee fields with null values", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate employee fields with null values","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when mandatory fields are empty", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when mandatory fields are empty","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when mandatory fields are empty", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when mandatory fields are empty","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login to Asset with invalid employeeID&quot;, &quot;Login to Asset&quot;)">
+                  </a> <!-- runScenario("Login to Asset with invalid employeeID", "Login to Asset") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login to Asset with invalid employeeID","Login to Asset")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when  employee fields is missing", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when  employee fields is missing","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when  employee fields is missing", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when  employee fields is missing","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate employee fields with null values", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate employee fields with null values","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login to Asset with invalid password&quot;, &quot;Login to Asset&quot;)">
+                  </a> <!-- runScenario("Login to Asset with invalid password", "Login to Asset") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login to Asset with invalid password","Login to Asset")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Reject an employee with a invalid status&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Reject an employee with a invalid status", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Reject an employee with a invalid status","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when  employee fields is missing", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when  employee fields is missing","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate employee fields with null values", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate employee fields with null values","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Reject an employee with duplicated employee ID&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Reject an employee with duplicated employee ID", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Reject an employee with duplicated employee ID","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when  employee fields is missing", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when  employee fields is missing","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Reject an employee with a invalid HTTP method&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Reject an employee with a invalid HTTP method", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Reject an employee with a invalid HTTP method","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login to Asset with invalid employeeID&quot;, &quot;Login to Asset&quot;)">
+                  </a> <!-- runScenario("Login to Asset with invalid employeeID", "Login to Asset") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login to Asset with invalid employeeID","Login to Asset")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when  employee fields is missing", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when  employee fields is missing","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login to Asset with invalid password&quot;, &quot;Login to Asset&quot;)">
+                  </a> <!-- runScenario("Login to Asset with invalid password", "Login to Asset") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login to Asset with invalid password","Login to Asset")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when  employee fields is missing", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when  employee fields is missing","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate employee fields with null values", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate employee fields with null values","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when  employee fields is missing&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when  employee fields is missing", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when  employee fields is missing","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successfully add an employee with valid details&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Successfully add an employee with valid details", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successfully add an employee with valid details","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login to Asset with invalid password&quot;, &quot;Login to Asset&quot;)">
+                  </a> <!-- runScenario("Login to Asset with invalid password", "Login to Asset") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login to Asset with invalid password","Login to Asset")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login to Asset with valid credentials&quot;, &quot;Login to Asset&quot;)">
+                  </a> <!-- runScenario("Login to Asset with valid credentials", "Login to Asset") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login to Asset with valid credentials","Login to Asset")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate when mandatory fields are empty&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate when mandatory fields are empty", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate when mandatory fields are empty","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate employee fields with null values&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Validate employee fields with null values", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate employee fields with null values","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Reject an employee with duplicate Email&quot;, &quot;Add Employee&quot;)">
+                  </a> <!-- runScenario("Reject an employee with duplicate Email", "Add Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Reject an employee with duplicate Email","Add Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.assetapi.runners.TestRunner&quot;/&gt;
+      &lt;class name=&quot;com.assetapi.utils.TestDataUtils&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(43);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(0, 3, 2044);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(1, 3, 622);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(2, 3, 190);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(3, 3, 116);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(4, 3, 66);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(5, 3, 62);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(6, 3, 55);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(7, 3, 48);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(8, 3, 44);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(9, 3, 38);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(10, 3, 36);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(11, 3, 36);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(12, 3, 35);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(13, 3, 33);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(14, 3, 33);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(15, 3, 32);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(16, 3, 32);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(17, 3, 31);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(18, 3, 29);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(19, 3, 28);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(20, 3, 28);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(21, 3, 27);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(22, 3, 27);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(23, 3, 27);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(24, 3, 27);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(25, 3, 27);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(26, 3, 26);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(27, 3, 26);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(28, 3, 25);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(29, 3, 24);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(30, 3, 24);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'runScenario')
+data.setCell(31, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(31, 3, 24);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'runScenario')
+data.setCell(32, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(32, 3, 24);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'runScenario')
+data.setCell(33, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(33, 3, 23);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'runScenario')
+data.setCell(34, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(34, 3, 23);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'runScenario')
+data.setCell(35, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(35, 3, 22);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'runScenario')
+data.setCell(36, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(36, 3, 21);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'runScenario')
+data.setCell(37, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(37, 3, 20);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'runScenario')
+data.setCell(38, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(38, 3, 20);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'runScenario')
+data.setCell(39, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(39, 3, 19);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'runScenario')
+data.setCell(40, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(40, 3, 19);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'runScenario')
+data.setCell(41, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(41, 3, 18);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'runScenario')
+data.setCell(42, 2, 'com.assetapi.runners.TestRunner')
+data.setCell(42, 3, 17);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.assetapi.runners.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@bb6f3f7)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Successfully add an employee with valid details", "Add Employee")</span>
+                <span class="method-start">610 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Successfully add an employee with only mandatory details", "Add Employee")</span>
+                <span class="method-start">2659 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate when  employee fields is missing", "Add Employee")</span>
+                <span class="method-start">2728 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when  employee fields is missing", "Add Employee")</span>
+                <span class="method-start">2795 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when  employee fields is missing", "Add Employee")</span>
+                <span class="method-start">2832 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when  employee fields is missing", "Add Employee")</span>
+                <span class="method-start">2864 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when  employee fields is missing", "Add Employee")</span>
+                <span class="method-start">2909 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when  employee fields is missing", "Add Employee")</span>
+                <span class="method-start">2945 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when  employee fields is missing", "Add Employee")</span>
+                <span class="method-start">3000 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when  employee fields is missing", "Add Employee")</span>
+                <span class="method-start">3035 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when  employee fields is missing", "Add Employee")</span>
+                <span class="method-start">3071 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when  employee fields is missing", "Add Employee")</span>
+                <span class="method-start">3098 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when mandatory fields are empty", "Add Employee")</span>
+                <span class="method-start">3127 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate when mandatory fields are empty", "Add Employee")</span>
+                <span class="method-start">3157 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when mandatory fields are empty", "Add Employee")</span>
+                <span class="method-start">3183 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when mandatory fields are empty", "Add Employee")</span>
+                <span class="method-start">3212 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when mandatory fields are empty", "Add Employee")</span>
+                <span class="method-start">3235 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when mandatory fields are empty", "Add Employee")</span>
+                <span class="method-start">3256 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when mandatory fields are empty", "Add Employee")</span>
+                <span class="method-start">3284 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate when mandatory fields are empty", "Add Employee")</span>
+                <span class="method-start">3309 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate employee fields with null values", "Add Employee")</span>
+                <span class="method-start">3335 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate employee fields with null values", "Add Employee")</span>
+                <span class="method-start">3366 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate employee fields with null values", "Add Employee")</span>
+                <span class="method-start">3398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate employee fields with null values", "Add Employee")</span>
+                <span class="method-start">3427 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate employee fields with null values", "Add Employee")</span>
+                <span class="method-start">3444 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate employee fields with null values", "Add Employee")</span>
+                <span class="method-start">3472 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate employee fields with null values", "Add Employee")</span>
+                <span class="method-start">3492 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate employee fields with null values", "Add Employee")</span>
+                <span class="method-start">3516 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Reject an employee with duplicated employee ID", "Add Employee")</span>
+                <span class="method-start">3543 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Reject an employee with duplicate Email", "Add Employee")</span>
+                <span class="method-start">3567 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Reject an employee with a duplicate mobile number", "Add Employee")</span>
+                <span class="method-start">3586 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Reject an employee with an invalid authentication token", "Add Employee")</span>
+                <span class="method-start">3630 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Reject an employee with a invalid HTTP method", "Add Employee")</span>
+                <span class="method-start">4258 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Reject an employee with a invalid role", "Add Employee")</span>
+                <span class="method-start">4306 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Reject an employee with a invalid status", "Add Employee")</span>
+                <span class="method-start">4329 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login to Asset with valid credentials", "Login to Asset")</span>
+                <span class="method-start">4351 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login to Asset with invalid credentials", "Login to Asset")</span>
+                <span class="method-start">4549 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login to Asset with invalid employeeID", "Login to Asset")</span>
+                <span class="method-start">4665 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login to Asset with invalid employeeID", "Login to Asset")</span>
+                <span class="method-start">4691 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login to Asset with invalid employeeID", "Login to Asset")</span>
+                <span class="method-start">4711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login to Asset with invalid password", "Login to Asset")</span>
+                <span class="method-start">4744 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login to Asset with invalid password", "Login to Asset")</span>
+                <span class="method-start">4771 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login to Asset with invalid password", "Login to Asset")</span>
+                <span class="method-start">4789 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">4819 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
